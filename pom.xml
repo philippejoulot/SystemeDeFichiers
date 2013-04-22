@@ -9,6 +9,18 @@
 
   <name>SystemeDeFichiers</name>
   <url>http://maven.apache.org</url>
+  
+  	<developers> 
+	  <developer>
+		<id>philippejoulot</id>
+		<name>Philippe JOULOT</name>
+	  </developer>
+	  
+	 <developer>
+		<id>pierrelizet</id>
+		<name>Pierre LIZET</name>
+	  </developer>
+	</developers>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,7 +31,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.0</version>
-			<scope>compile</scope>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
     
