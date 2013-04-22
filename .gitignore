@@ -1,9 +1,3 @@
-
-
-# On ignore les fichiers générés comme les .class et les .jar
-/*.class
-/*.jar
+# On ignore le dossier contenant fichiers generes 
+#(javadoc, rapports, .class, .jar etc...)
 /target
-
-# On ignore la javadoc
-/doc

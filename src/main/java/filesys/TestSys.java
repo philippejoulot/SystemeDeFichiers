@@ -51,8 +51,8 @@ public class TestSys {
 
     /**
      * @throws ExceptionSystemeFichier
-     *             Test susceptible de lancer une exception de type
-     *             ExceptionSystemeFichier
+     *             Test attendant une exception de type
+     *             ExceptionSystemeFichier car la taille est negative
      */
     @Test(expected = ExceptionSystemeFichier.class)
     public void calculTailleNegative() throws ExceptionSystemeFichier {
@@ -80,8 +80,8 @@ public class TestSys {
 
     /**
      * @throws ExceptionSystemeFichier
-     *             Test susceptible de lancer une exception de type
-     *             ExceptionSystemeFichier
+     *             Test attendant une exception de type
+     *             ExceptionSystemeFichier car on ajoute une reference nulle
      */
     @Test(expected = ExceptionSystemeFichier.class)
     public void referenceNulle() throws ExceptionSystemeFichier {
@@ -92,8 +92,9 @@ public class TestSys {
 
     /**
      * @throws ExceptionSystemeFichier
-     *             Test susceptible de lancer une exception de type
-     *             ExceptionSystemeFichier
+     *             Test attendant une exception de type
+     *             ExceptionSystemeFichier car on ajoute
+     *             un composant de meme nom
      */
     @Test(expected = ExceptionSystemeFichier.class)
     public void ajoutMemeNom() throws ExceptionSystemeFichier {
@@ -118,8 +119,8 @@ public class TestSys {
 
     /**
      * @throws ExceptionSystemeFichier
-     *             Test susceptible de lancer une exception de type
-     *             ExceptionSystemeFichier
+     *             Test attendant une exception de type ExceptionSystemeFichier
+     *             car on ajoute un repertoire a lui-meme
      */
     @Test(expected = ExceptionSystemeFichier.class)
     public void ajoutSoitMeme() throws ExceptionSystemeFichier {
@@ -130,8 +131,9 @@ public class TestSys {
 
     /**
      * @throws ExceptionSystemeFichier
-     *             Test susceptible de lancer une exception de type
-     *             ExceptionSystemeFichier
+     *             Test attendant une exception de type ExceptionSystemeFichier
+     *             car on ajoute un repertoire qui est un
+     *             sous-repertoire de lui-meme
      */
     @Test(expected = ExceptionSystemeFichier.class)
     public void sousRepertoireLuiMeme() throws ExceptionSystemeFichier {
