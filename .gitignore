@@ -1,0 +1,9 @@
+
+
+# On ignore les fichiers générés comme les .class et les .jar
+/*.class
+/*.jar
+/target
+
+# On ignore la javadoc
+/doc
