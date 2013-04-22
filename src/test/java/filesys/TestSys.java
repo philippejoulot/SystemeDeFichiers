@@ -77,6 +77,16 @@ public class TestSys {
         int taille = dir1.getTaille();
         Assert.assertTrue(taille == (fich1.getTaille() + fich2.getTaille()));
     }
+    /**
+     * @throws ExceptionSystemeFichier
+     *             Test attendant une exception de type ExceptionSystemeFichier
+     *             car on cree un Composant avec un nom vide
+     */
+    @Test(expected = ExceptionSystemeFichier.class)
+    public void nomVide() throws ExceptionSystemeFichier {
+        File fich1 = new File("");
+        Assert.assertTrue(!fich1.getNom().equals(""));
+    }
 
     /**
      * @throws ExceptionSystemeFichier
